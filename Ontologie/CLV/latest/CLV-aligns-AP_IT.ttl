@@ -37,43 +37,43 @@
 # Classes - Alignments
 clvapit:SpatialObject a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf gsp:SpatialObject , geo:SpatialThing .
+  owl:subClassOf gsp:SpatialObject , geo:SpatialThing .
 
 clvapit:Feature a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf gsp:Feature , gn:Feature .
+  owl:subClassOf gsp:Feature , gn:Feature .
 
 clvapit:Geometry a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf gsp:Geometry , locn:Geometry  .
+  owl:subClassOf gsp:Geometry , locn:Geometry  .
 
 clvapit:Identifier a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf gn:Code .
+  owl:subClassOf gn:Code .
 
 clvapit:Address a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf locn:Address , ad:Address .
+  owl:subClassOf locn:Address , ad:Address .
 
 clvapit:AddressComponent a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf ad:AddressComponent .
+  owl:subClassOf ad:AddressComponent .
 
 clvapit:AddressArea a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf ad:AddressAreaName .
+  owl:subClassOf ad:AddressAreaName .
 
 clvapit:AdminUnitComponent a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf au:AdministrativeUnit .
+  owl:subClassOf au:AdministrativeUnit .
 
 clvapit:StreetToponym a owl:Class ;
     rdfs:isDefinedBy clvapit: ;
-    rdfs:subClassOf ad:ThoroughfareName .
+    owl:subClassOf ad:ThoroughfareName .
 
 clvapit:CivicNumbering a owl:Class ;
     rdfs:isDefinedBy clvapit: ;
-    rdfs:subClassOf ad:AddressLocator .
+    owl:subClassOf ad:AddressLocator .
 
 clvapit:City a owl:Class ;
     rdfs:isDefinedBy clvapit: ;
@@ -97,20 +97,20 @@ clvapit:Region a owl:Class ;
 
 clvapit:GeographicalDistribution a owl:Class ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subClassOf skos:Concept .
+  owl:subClassOf skos:Concept .
 
 # Object Properties - Alignments
 clvapit:hasAddress a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf locn:address .
+  owl:subPropertyOf locn:address .
 
 clvapit:hasSpatialCoverage a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf locn:location .
+  owl:subPropertyOf locn:location .
 
 clvapit:hasGeometry a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf locn:geometry .
+  owl:subPropertyOf locn:geometry .
 
 clvapit:situatedWithin a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
@@ -118,20 +118,20 @@ clvapit:situatedWithin a owl:ObjectProperty ;
 
 clvapit:hasAddressComponent a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf ad:Address.component .
+  owl:subPropertyOf ad:Address.component .
 
 clvapit:prevAddress a owl:ObjectProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf ad:parentAddress .
+  owl:subPropertyOf ad:parentAddress .
 
 #Data Type Properties - Alignments
 clvapit:postCode a owl:DatatypeProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf ad:postCode .
+  owl:subPropertyOf ad:postCode .
 
 clvapit:fullAddress a owl:DatatypeProperty ;
   rdfs:isDefinedBy clvapit: ;
-  rdfs:subPropertyOf locn:fullAddress .
+  owl:subPropertyOf locn:fullAddress .
 
 clvapit:serialization a owl:DatatypeProperty ;
   rdfs:isDefinedBy clvapit: ;

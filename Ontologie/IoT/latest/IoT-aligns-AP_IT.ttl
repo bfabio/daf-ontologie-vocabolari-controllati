@@ -8,166 +8,341 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
-@base <https://w3id.org/italia/onto/iotapit-aligns> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix iotapit: <https://w3id.org/italia/onto/IoT/> .
+@base <https://w3id.org/italia/onto/iotapit-aligns/> .
 
-<https://w3id.org/italia/onto/iotapit-aligns> rdf:type owl:Ontology ;
-
+<https://w3id.org/italia/onto/iotapit-aligns/> rdf:type owl:Ontology ;
+                                               
                                                owl:imports <https://w3id.org/italia/onto/IoT> ;
-
-                                               owl:versionIRI <https://w3id.org/italia/onto/iotapit-aligns/1.0> .
+                                               
+                                               owl:versionIRI <https://w3id.org/italia/onto/iotapit-aligns/0.10> .
 
 
 #################################################################
 #
-#    Object properties
+#    Annotation properties
 #
 #################################################################
 
 
+###  http://dati.gov.it/onto/iotapit/atTime
 
-###  https://w3id.org/italia/onto/IoT/consistsOf
+<http://dati.gov.it/onto/iotapit/atTime> rdf:type owl:AnnotationProperty ;
+                                         
+                                         rdfs:subPropertyOf dul:isTimeOfObservationOf .
 
-<https://w3id.org/italia/onto/IoT/consistsOf> rdf:type owl:ObjectProperty ;
 
+
+###  http://dati.gov.it/onto/iotapit/consistsOf
+
+<http://dati.gov.it/onto/iotapit/consistsOf> rdf:type owl:AnnotationProperty ;
+                                             
                                              rdfs:subPropertyOf dul:hasMember .
 
 
-###  https://w3id.org/italia/onto/IoT/usedMethod
 
-<https://w3id.org/italia/onto/IoT/usedMethod> rdf:type owl:ObjectProperty ;
+###  http://dati.gov.it/onto/iotapit/date
 
-                                            rdfs:subPropertyOf sosa:usedProcedure .
+<http://dati.gov.it/onto/iotapit/date> rdf:type owl:AnnotationProperty ;
+                                       
+                                       rdfs:subPropertyOf sosa:resultTime .
 
 
-###  https://w3id.org/italia/onto/IoT/hasFeatureOfInterest
 
-<https://w3id.org/italia/onto/IoT/hasFeatureOfInterest> rdf:type owl:ObjectProperty ;
+###  http://dati.gov.it/onto/iotapit/description
 
+<http://dati.gov.it/onto/iotapit/description> rdf:type owl:AnnotationProperty ;
+                                              
+                                              rdfs:subPropertyOf terms:description .
+
+
+
+###  http://dati.gov.it/onto/iotapit/hasAssociatedGeometry
+
+<http://dati.gov.it/onto/iotapit/hasAssociatedGeometry> rdf:type owl:AnnotationProperty ;
+                                                        
+                                                        rdfs:subPropertyOf dul:associatedWith .
+
+
+
+###  http://dati.gov.it/onto/iotapit/hasFeatureOfInterest
+
+<http://dati.gov.it/onto/iotapit/hasFeatureOfInterest> rdf:type owl:AnnotationProperty ;
+                                                       
                                                        rdfs:subPropertyOf sosa:hasFeatureOfInterest .
 
-###  https://w3id.org/italia/onto/IoT/hostsMonitoringFacility
-
-<https://w3id.org/italia/onto/IoT/hostsMonitoringFacility> rdf:type owl:ObjectProperty ;
-
-                                                      rdfs:subPropertyOf sosa:hosts .
 
 
-###  https://w3id.org/italia/onto/IoT/hasMeasurementQualityValue
+###  http://dati.gov.it/onto/iotapit/hasMeasurementQualityValue
 
-<https://w3id.org/italia/onto/IoT/hasMeasurementQualityValue> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/hasMeasurementQualityValue> rdf:type owl:AnnotationProperty ;
+                                                             
                                                              rdfs:subPropertyOf dul:hasRegion .
 
 
-###  https://w3id.org/italia/onto/IoT/hasObservationParameter
 
-<https://w3id.org/italia/onto/IoT/hasObservationParameter> rdf:type owl:ObjectProperty ;
+###  http://dati.gov.it/onto/iotapit/hasMeasurementUnit
 
+<http://dati.gov.it/onto/iotapit/hasMeasurementUnit> rdf:type owl:AnnotationProperty ;
+                                                     
+                                                     rdfs:subPropertyOf dul:hasParameter .
+
+
+
+###  http://dati.gov.it/onto/iotapit/hasObservationParameter
+
+<http://dati.gov.it/onto/iotapit/hasObservationParameter> rdf:type owl:AnnotationProperty ;
+                                                          
                                                           rdfs:subPropertyOf dul:hasParameter .
 
 
 
-###  https://w3id.org/italia/onto/IoT/hasObservationValue
+###  http://dati.gov.it/onto/iotapit/hasObservationValue
 
-<https://w3id.org/italia/onto/IoT/hasObservationValue> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/hasObservationValue> rdf:type owl:AnnotationProperty ;
+                                                      
                                                       rdfs:subPropertyOf dul:hasRegion .
 
 
 
-###  https://w3id.org/italia/onto/IoT/hasQuality
+###  http://dati.gov.it/onto/iotapit/hasQuality
 
-<https://w3id.org/italia/onto/IoT/hasQuality> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/hasQuality> rdf:type owl:AnnotationProperty ;
+                                             
                                              rdfs:subPropertyOf dul:hasQuality .
 
 
 
-###  https://w3id.org/italia/onto/IoT/hasValueForObservationParameter
+###  http://dati.gov.it/onto/iotapit/hasValueForObservationParameter
 
-<https://w3id.org/italia/onto/IoT/hasValueForObservationParameter> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/hasValueForObservationParameter> rdf:type owl:AnnotationProperty ;
+                                                                  
                                                                   rdfs:subPropertyOf dul:hasRegion .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor
+###  http://dati.gov.it/onto/iotapit/identifier
 
-<https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor> rdf:type owl:ObjectProperty ;
+<http://dati.gov.it/onto/iotapit/identifier> rdf:type owl:AnnotationProperty ;
+                                             
+                                             rdfs:subPropertyOf terms:identifier .
 
+
+
+###  http://dati.gov.it/onto/iotapit/isFeatureOfInterestFor
+
+<http://dati.gov.it/onto/iotapit/isFeatureOfInterestFor> rdf:type owl:AnnotationProperty ;
+                                                         
                                                          rdfs:subPropertyOf sosa:isFeatureOfInterestOf .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isMeasurementQualityValueOf
+###  http://dati.gov.it/onto/iotapit/isMeasurementQualityValueOf
 
-<https://w3id.org/italia/onto/IoT/isMeasurementQualityValueOf> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/isMeasurementQualityValueOf> rdf:type owl:AnnotationProperty ;
+                                                              
                                                               rdfs:subPropertyOf dul:isRegionOf .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isObservationParameterFor
+###  http://dati.gov.it/onto/iotapit/isObservationParameterFor
 
-<https://w3id.org/italia/onto/IoT/isObservationParameterFor> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/isObservationParameterFor> rdf:type owl:AnnotationProperty ;
+                                                            
                                                             rdfs:subPropertyOf dul:isParameterFor .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isObservationValueOf
+###  http://dati.gov.it/onto/iotapit/isObservationValueOf
 
-<https://w3id.org/italia/onto/IoT/isObservationValueOf> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/isObservationValueOf> rdf:type owl:AnnotationProperty ;
+                                                       
                                                        rdfs:subPropertyOf dul:isRegionOf .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isPartOf
+###  http://dati.gov.it/onto/iotapit/isPartOf
 
-<https://w3id.org/italia/onto/IoT/isPartOf> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/isPartOf> rdf:type owl:AnnotationProperty ;
+                                           
                                            rdfs:subPropertyOf dul:isMemberOf .
 
 
 
-###  https://w3id.org/italia/onto/IoT/isValueForObservationParameter
+###  http://dati.gov.it/onto/iotapit/isValueForObservationParameter
 
-<https://w3id.org/italia/onto/IoT/isValueForObservationParameter> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/isValueForObservationParameter> rdf:type owl:AnnotationProperty ;
+                                                                 
                                                                  rdfs:subPropertyOf dul:isRegionOf .
 
 
 
-###  https://w3id.org/italia/onto/IoT/makesObservation
+###  http://dati.gov.it/onto/iotapit/makesObservation
 
-<https://w3id.org/italia/onto/IoT/makesObservation> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/makesObservation> rdf:type owl:AnnotationProperty ;
+                                                   
                                                    rdfs:subPropertyOf sosa:madeObservation .
 
 
 
-###  https://w3id.org/italia/onto/IoT/makesObservationCollection
+###  http://dati.gov.it/onto/iotapit/makesObservationCollection
 
-<https://w3id.org/italia/onto/IoT/makesObservationCollection> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/makesObservationCollection> rdf:type owl:AnnotationProperty ;
+                                                             
                                                              rdfs:subPropertyOf dul:associatedWith .
 
 
 
-###  https://w3id.org/italia/onto/IoT/observationCollectionMadeBySensor
+###  http://dati.gov.it/onto/iotapit/modified
 
-<https://w3id.org/italia/onto/IoT/observationCollectionMadeBySensor> rdf:type owl:ObjectProperty ;
+<http://dati.gov.it/onto/iotapit/modified> rdf:type owl:AnnotationProperty ;
+                                           
+                                           rdfs:subPropertyOf terms:modified .
 
+
+
+###  http://dati.gov.it/onto/iotapit/observationCollectionMadeBySensor
+
+<http://dati.gov.it/onto/iotapit/observationCollectionMadeBySensor> rdf:type owl:AnnotationProperty ;
+                                                                    
                                                                     rdfs:subPropertyOf dul:associatedWith .
 
 
 
-###  https://w3id.org/italia/onto/IoT/observationMadeBySensor
+###  http://dati.gov.it/onto/iotapit/observationMadeBySensor
 
-<https://w3id.org/italia/onto/IoT/observationMadeBySensor> rdf:type owl:ObjectProperty ;
-
+<http://dati.gov.it/onto/iotapit/observationMadeBySensor> rdf:type owl:AnnotationProperty ;
+                                                          
                                                           rdfs:subPropertyOf sosa:madeBySensor .
+
+
+
+###  http://dati.gov.it/onto/iotapit/prefLabel
+
+<http://dati.gov.it/onto/iotapit/prefLabel> rdf:type owl:AnnotationProperty ;
+                                            
+                                            rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#prefLabel> .
+
+
+
+###  http://purl.org/dc/terms/description
+
+terms:description rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/identifier
+
+terms:identifier rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith
+
+dul:associatedWith rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember
+
+dul:hasMember rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter
+
+dul:hasParameter rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
+
+dul:hasQuality rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion
+
+dul:hasRegion rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
+
+dul:isMemberOf rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor
+
+dul:isParameterFor rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionOf
+
+dul:isRegionOf rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeOfObservationOf
+
+dul:isTimeOfObservationOf rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+
+sosa:hasFeatureOfInterest rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+
+sosa:isFeatureOfInterestOf rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+
+sosa:madeBySensor rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/madeObservation
+
+sosa:madeObservation rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/resultTime
+
+sosa:resultTime rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://dati.gov.it/onto/to/atTime
+
+<http://dati.gov.it/onto/to/atTime> rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:subPropertyOf dul:isTimeOfObservationOf .
 
 
 
@@ -179,13 +354,16 @@ dul:associatedWith rdf:type owl:ObjectProperty .
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember
 
-dul:hasMember rdf:type owl:ObjectProperty .
+dul:hasMember rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf dul:associatedWith .
+
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter
 
 dul:hasParameter rdf:type owl:ObjectProperty ;
-
+                 
                  rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -193,7 +371,7 @@ dul:hasParameter rdf:type owl:ObjectProperty ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
 
 dul:hasQuality rdf:type owl:ObjectProperty ;
-
+               
                rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -201,7 +379,7 @@ dul:hasQuality rdf:type owl:ObjectProperty ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion
 
 dul:hasRegion rdf:type owl:ObjectProperty ;
-
+              
               rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -209,7 +387,7 @@ dul:hasRegion rdf:type owl:ObjectProperty ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
 
 dul:isMemberOf rdf:type owl:ObjectProperty ;
-
+               
                rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -217,7 +395,7 @@ dul:isMemberOf rdf:type owl:ObjectProperty ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor
 
 dul:isParameterFor rdf:type owl:ObjectProperty ;
-
+                   
                    rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -225,14 +403,23 @@ dul:isParameterFor rdf:type owl:ObjectProperty ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionOf
 
 dul:isRegionOf rdf:type owl:ObjectProperty ;
-
+               
                rdfs:subPropertyOf dul:associatedWith .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeOfObservationOf
+
+dul:isTimeOfObservationOf rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:subPropertyOf dul:associatedWith .
+
 
 
 ###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
 
 sosa:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
-
+                          
                           rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -240,21 +427,15 @@ sosa:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
 ###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
 
 sosa:isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
-
+                           
                            rdfs:subPropertyOf dul:associatedWith .
 
-###  http://www.w3.org/ns/sosa/usedProcedure
 
-sosa:usedProcedure rdf:type owl:ObjectProperty .
-
-##  http://www.w3.org/ns/sosa/hosts
-
-sosa:hosts rdf:type owl:ObjectProperty .
 
 ###  http://www.w3.org/ns/sosa/madeBySensor
 
 sosa:madeBySensor rdf:type owl:ObjectProperty ;
-
+                  
                   rdfs:subPropertyOf dul:associatedWith .
 
 
@@ -262,8 +443,49 @@ sosa:madeBySensor rdf:type owl:ObjectProperty ;
 ###  http://www.w3.org/ns/sosa/madeObservation
 
 sosa:madeObservation rdf:type owl:ObjectProperty ;
-
+                     
                      rdfs:subPropertyOf dul:associatedWith .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/description
+
+terms:description rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/dc/terms/identifier
+
+terms:identifier rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/dc/terms/modified
+
+terms:modified rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/ns/sosa/resultTime
+
+sosa:resultTime rdf:type owl:DatatypeProperty .
+
+
 
 
 
@@ -274,77 +496,106 @@ sosa:madeObservation rdf:type owl:ObjectProperty ;
 #################################################################
 
 
-###  https://w3id.org/italia/onto/IoT/FeatureOfInterest
+###  http://dati.gov.it/onto/iotapit/FeatureOfInterest
 
-<https://w3id.org/italia/onto/IoT/FeatureOfInterest> rdf:type owl:Class ;
-
+<http://dati.gov.it/onto/iotapit/FeatureOfInterest> rdf:type owl:Class ;
+                                                    
                                                     rdfs:subClassOf sosa:FeatureOfInterest .
 
 
 
-###  https://w3id.org/italia/onto/IoT/MeasurementQuality
+###  http://dati.gov.it/onto/iotapit/Geometry
 
-<https://w3id.org/italia/onto/IoT/MeasurementQuality> rdf:type owl:Class ;
+<http://dati.gov.it/onto/iotapit/Geometry> rdf:type owl:Class ;
+                                           
+                                           rdfs:subClassOf dul:SpaceRegion .
 
-                                                      rdfs:subClassOf ssn:SystemProperty .
+
+
+###  http://dati.gov.it/onto/iotapit/MeasurementQuality
+
+<http://dati.gov.it/onto/iotapit/MeasurementQuality> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:subClassOf ssn:SystemProperty .
 
 
 
-###  https://w3id.org/italia/onto/IoT/Observation
+###  http://dati.gov.it/onto/iotapit/MeasurementUnit
 
-<https://w3id.org/italia/onto/IoT/Observation> rdf:type owl:Class ;
+<http://dati.gov.it/onto/iotapit/MeasurementUnit> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:subClassOf dul:UnitOfMeasure .
 
+
+
+###  http://dati.gov.it/onto/iotapit/Observation
+
+<http://dati.gov.it/onto/iotapit/Observation> rdf:type owl:Class ;
+                                              
                                               rdfs:subClassOf sosa:Observation .
 
 
 
-###  https://w3id.org/italia/onto/IoT/ObservationCollection
+###  http://dati.gov.it/onto/iotapit/ObservationCollection
 
-<https://w3id.org/italia/onto/IoT/ObservationCollection> rdf:type owl:Class ;
-
+<http://dati.gov.it/onto/iotapit/ObservationCollection> rdf:type owl:Class ;
+                                                        
                                                         rdfs:subClassOf dul:Collection .
 
 
 
-###  https://w3id.org/italia/onto/IoT/ObservationParameter
+###  http://dati.gov.it/onto/iotapit/ObservationParameter
 
-<https://w3id.org/italia/onto/IoT/ObservationParameter> rdf:type owl:Class ;
-
+<http://dati.gov.it/onto/iotapit/ObservationParameter> rdf:type owl:Class ;
+                                                       
                                                        rdfs:subClassOf dul:Parameter .
 
 
 
-###  https://w3id.org/italia/onto/IoT/Sensor
+###  http://dati.gov.it/onto/iotapit/Sensor
 
-<https://w3id.org/italia/onto/IoT/Sensor> rdf:type owl:Class ;
-
+<http://dati.gov.it/onto/iotapit/Sensor> rdf:type owl:Class ;
+                                         
                                          rdfs:subClassOf ssn:Sensor .
 
 
 
-###  https://w3id.org/italia/onto/IoT/MeasurementQualityValue
+###  http://dati.gov.it/onto/iotapit/TimeInterval
 
-<https://w3id.org/italia/onto/IoT/MeasurementQualityValue> rdf:type owl:Class ;
+<http://dati.gov.it/onto/iotapit/TimeInterval> rdf:type owl:Class ;
+                                               
+                                               owl:equivalentClass <http://dati.gov.it/onto/to/TimeInterval> ;
+                                               
+                                               rdfs:subClassOf time:Interval .
 
+
+
+###  http://dati.gov.it/onto/iotapit/Value
+
+<http://dati.gov.it/onto/iotapit/Value> rdf:type owl:Class ;
+                                        
                                         rdfs:subClassOf dul:Amount .
 
 
-##  https://w3id.org/italia/onto/IoT/Method
 
-<https://w3id.org/italia/onto/IoT/Method> rdf:type owl:Class ;
+###  http://dati.gov.it/onto/to/TimeInterval
 
-                                        rdfs:subClassOf sosa:Procedure .
+<http://dati.gov.it/onto/to/TimeInterval> rdf:type owl:Class ;
+                                          
+                                          rdfs:subClassOf time:Interval .
 
-##  https://w3id.org/italia/onto/IoT/Platform
 
-<https://w3id.org/italia/onto/IoT/Platform> rdf:type owl:Class ;
 
-                                        rdfs:subClassOf sosa:Platform .
+###  http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic
+
+d0:Characteristic rdf:type owl:Class .
+
+
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount
 
 dul:Amount rdf:type owl:Class ;
-
+           
            rdfs:subClassOf dul:Region .
 
 
@@ -352,7 +603,7 @@ dul:Amount rdf:type owl:Class ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
 
 dul:Collection rdf:type owl:Class ;
-
+               
                rdfs:subClassOf dul:Object .
 
 
@@ -366,7 +617,7 @@ dul:Entity rdf:type owl:Class .
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
 
 dul:Event rdf:type owl:Class ;
-
+          
           rdfs:subClassOf dul:Entity .
 
 
@@ -374,7 +625,7 @@ dul:Event rdf:type owl:Class ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
 
 dul:Object rdf:type owl:Class ;
-
+           
            rdfs:subClassOf dul:Entity .
 
 
@@ -382,56 +633,80 @@ dul:Object rdf:type owl:Class ;
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
 
 dul:Parameter rdf:type owl:Class ;
-
+              
               rdfs:subClassOf d0:Characteristic .
 
 
-d0:Characteristic rdf:type owl:Class .
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
 
 dul:Quality rdf:type owl:Class ;
-
+            
             rdfs:subClassOf d0:Characteristic ,
                             dul:Entity .
 
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method
-dul:Method rdf:type owl:Class .
+
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
 
 dul:Region rdf:type owl:Class ;
-
+           
            rdfs:subClassOf d0:Characteristic .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+
+dul:SpaceRegion rdf:type owl:Class ;
+                
+                rdfs:subClassOf dul:Region .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+
+dul:TimeInterval rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf dul:Region .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
+
+dul:UnitOfMeasure rdf:type owl:Class ;
+                  
+                  rdfs:subClassOf dul:Parameter .
+
+
+
+###  http://www.w3.org/2006/time#Interval
+
+time:Interval rdf:type owl:Class ;
+              
+              rdfs:subClassOf dul:TimeInterval .
+
 
 
 ###  http://www.w3.org/ns/sosa/FeatureOfInterest
 
 sosa:FeatureOfInterest rdf:type owl:Class ;
-
+                       
                        rdfs:subClassOf dul:Entity .
 
 
-###  http://www.w3.org/ns/sosa/Platform
-
-sosa:Platform rdf:type owl:Class ;
-
-                      rdfs:subClassOf dul:Object .
 
 ###  http://www.w3.org/ns/sosa/Observation
 
 sosa:Observation rdf:type owl:Class ;
-
+                 
                  rdfs:subClassOf dul:Event .
 
-###  http://www.w3.org/ns/sosa/Procedure
-sosa:Procedure rdf:type owl:Class ;
-              rdfs:subClassOf dul:Method .
+
 
 ###  http://www.w3.org/ns/ssn/Sensor
 
 ssn:Sensor rdf:type owl:Class ;
-
+           
            rdfs:subClassOf dul:Object .
 
 
@@ -439,10 +714,11 @@ ssn:Sensor rdf:type owl:Class ;
 ###  http://www.w3.org/ns/ssn/SystemProperty
 
 ssn:SystemProperty rdf:type owl:Class ;
-
+                   
                    rdfs:subClassOf dul:Quality .
 
 
 
 
 ###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+

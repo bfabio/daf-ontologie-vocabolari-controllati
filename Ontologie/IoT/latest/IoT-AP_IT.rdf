@@ -1,92 +1,92 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/italia/onto/IoT/"
      xml:base="https://w3id.org/italia/onto/IoT/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:l0="https://w3id.org/italia/onto/l0/"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ssn="http://www.w3.org/ns/ssn/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:sosa="http://www.w3.org/ns/sosa/"
-     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-     xmlns:muapit="https://w3id.org/italia/onto/MU/"
-     xmlns:schema="http://schema.org/"
-     xmlns:tiapit="https://w3id.org/italia/onto/TI/"
-     xmlns:clvapit="https://w3id.org/italia/onto/CLV/"
      xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
-     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#">
-    <owl:Ontology rdf:about="https://w3id.org/italia/onto/IoT">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/IoT/1.1"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
+     xmlns:schema="http://schema.org/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:clvapit="https://w3id.org/italia/onto/CLV/"
+     xmlns:tiapit="https://w3id.org/italia/onto/TI/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:muapit="https://w3id.org/italia/onto/MU/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sosa="http://www.w3.org/ns/sosa/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/onto/ioT">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/IoT/0.10"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
-        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
-        <dct:description xml:lang="it">Questa è l&apos;ontologia di eventi IoT. Essa può essere utilizzata per esempio per rappresentare serie temporali e misure di sensoristica di vario tipo. Attualmente l&apos;ontologia include classi specializzate per la modellazione di flussi di traffico.</dct:description>
-        <dct:description xml:lang="en">This is the ontology used to represent IoT events. It can be used to model temporal series and measures of sensors of different type. Currently the ontology is specialized for modelling traffic flows.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-15</dct:issued>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-09</dct:modified>
-        <dct:publisher rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
-        <dct:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
-        <dct:title xml:lang="en">IoT event Ontology - Italian Application Profile</dct:title>
-        <dct:title xml:lang="it">Ontologia Eventi IoT - Profilo applicativo italiano</dct:title>
-        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia di eventi IoT. Essa può essere utilizzata per esempio per rappresentare serie temporali e misure di sensoristica di vario tipo. Attualmente l&apos;ontologia include classi specializzate per la modellazione di flussi di traffico.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the ontology used to represent IoT events. It can be used to model temporal series and measures of sensors of different types. Currently the ontology has been specialized for modelling traffic flows.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">IoT event Ontology</rdfs:label>
-        <rdfs:label xml:lang="it">Ontologia Eventi IoT</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 1.1 - June 9 2020 - modification of the alignments to l0 for Method, FeatureOfInterest, ObservationParameter classes</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 1.1 - Giugno 9 2020 - modificati gli allineamenti a l0 per le classi Metodo, Caratteristica di Interesse e Parametro dell&apos;Osservazione.</owl:versionInfo>
-        <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/onto-agid"/>
-        <dcat:keyword xml:lang="it">Internet of Things</dcat:keyword>
-        <dcat:keyword xml:lang="it">Misurazione</dcat:keyword>
-        <dcat:keyword xml:lang="it">Osservazione</dcat:keyword>
-        <dcat:keyword xml:lang="it">Sensore</dcat:keyword>
-        <dcat:keyword xml:lang="it">flusso di traffico</dcat:keyword>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/IoT/1.0"/>
-        <admsapit:acronym>IoT-AP_IT</admsapit:acronym>
-        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
-        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Actuator"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Observation"/>
-        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Sensor"/>
-        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/IOT-JSON-LD"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
         <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/IOT-RDF-TURTLE"/>
-        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/IOT-RDF-XML"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Actuator"/>
+        <dct:creator rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
+        <admsapit:target xml:lang="it">Cittadini</admsapit:target>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Observation"/>
+        <rdfs:label xml:lang="it">Ontologia Eventi IoT</rdfs:label>
         <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
         <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
-        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-        <admsapit:last rdf:resource="https://w3id.org/italia/onto/IoT/1.0"/>
+        <dcat:keyword xml:lang="it">flusso di traffico</dcat:keyword>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/IOT-JSON-LD"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
         <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/IoT</admsapit:officialURI>
+        <owl:versionInfo xml:lang="it">Versione 0.10 - 26 Novembre 2017 - rifattorizzazione tenendo in considerazione nuove proprietà di L0 e di TI-AP_IT (TIme - Italian Application Profile) e usando CLV-AP_IT (Core Location Vocabulary - Profilo Applicativo Italiano)</owl:versionInfo>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia di eventi IoT. Essa può essere utilizzata per esempio per rappresentare serie temporali e misure di sensoristica di vario tipo. Attualmente l&apos;ontologia include classi specializzate per la modellazione di flussi di traffico.</rdfs:comment>
+        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dcat:keyword xml:lang="it">Sensore</dcat:keyword>
         <admsapit:prefix>iotapit</admsapit:prefix>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/onto/IoT/Sensor"/>
+        <admsapit:last rdf:resource="https://w3id.org/italia/onto/IoT/0.10"/>
+        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/IoT/0.9"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-26</dct:modified>
+        <admsapit:status>catalogued</admsapit:status>
+        <rdfs:label xml:lang="en">IoT event Ontology</rdfs:label>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOntology"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/IOT-RDF-XML"/>
+        <dct:rightsHolder rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
+        <dct:publisher rdf:resource="http://spcdata.digitpa.gov.it/Amministrazione/agid"/>
+        <owl:versionInfo xml:lang="en">Version 0.10 - November 26 2017 - refactoring taking into account new properties in L0 and in TI-AP_IT (TIme - Italian Application Profile), and using CLV-AP_IT ontology (Core Location Vocabulary - Italian Application Profile)</owl:versionInfo>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
+        <admsapit:acronym>IoT-AP_IT</admsapit:acronym>
+        <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/onto-agid"/>
+        <dct:description xml:lang="en">This is the ontology used to represent IoT events. It can be used to model temporal series and measures of sensors of different type. Currently the ontology is specialized for modelling traffic flows.</dct:description>
         <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/DAF"/>
         <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
-        <admsapit:status>catalogued</admsapit:status>
-        <admsapit:status>published</admsapit:status>
-        <admsapit:target xml:lang="it">Cittadini</admsapit:target>
+        <dcat:keyword xml:lang="it">Internet of Things</dcat:keyword>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dcat:keyword xml:lang="it">Osservazione</dcat:keyword>
+        <dcat:keyword xml:lang="it">Misurazione</dcat:keyword>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-15</dct:issued>
+        <dct:title xml:lang="en">IoT event Ontology - Italian Application Profile</dct:title>
+        <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/public-organization/td"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <rdfs:comment xml:lang="en">This is the ontology used to represent IoT events. It can be used to model temporal series and measures of sensors of different types. Currently the ontology has been specialized for modelling traffic flows.</rdfs:comment>
         <admsapit:target xml:lang="it">Imprese</admsapit:target>
-        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
-        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOntology"/>
+        <admsapit:status>published</admsapit:status>
+        <dct:description xml:lang="it">Questa è l&apos;ontologia di eventi IoT. Essa può essere utilizzata per esempio per rappresentare serie temporali e misure di sensoristica di vario tipo. Attualmente l&apos;ontologia include classi specializzate per la modellazione di flussi di traffico.</dct:description>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+        <dct:title xml:lang="it">Ontologia Eventi IoT - Profilo applicativo italiano</dct:title>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -94,34 +94,34 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -129,7 +129,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/hasGeometry -->
@@ -137,23 +137,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasGeometry">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV/"/>
     </owl:ObjectProperty>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/comesFrom -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/IoT/comesFrom">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/Observation"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/IoT/Platform"/>
-        <rdfs:comment xml:lang="en">Property that links the observation with the platofrm where it comes from.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Proprietà che lega l&apos;osservazione con la piattaforma da cui deriva.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">comes from</rdfs:label>
-        <rdfs:label xml:lang="it">proviene da</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:ObjectProperty>
-    
 
 
     <!-- https://w3id.org/italia/onto/IoT/consistsOf -->
@@ -170,7 +154,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/generationTime -->
@@ -187,7 +171,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasFeatureOfInterest -->
@@ -204,7 +188,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasMeasurementQualityValue -->
@@ -221,7 +205,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasObservationParameter -->
@@ -238,7 +222,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasObservationValue -->
@@ -255,7 +239,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasQuality -->
@@ -271,7 +255,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/hasValueForObservationParameter -->
@@ -288,34 +272,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/hostsMonitoringFacility -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/IoT/hostsMonitoringFacility">
-        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/IoT/isHostedByPlatform"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/Platform"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
-        <rdfs:comment xml:lang="en">Property that links a platform with the monitoring facilities it hosts</rdfs:comment>
-        <rdfs:comment xml:lang="it">Proprietà che collega la piattaforma agli strumenti di monitoraggio che ospita</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">hosts monitoring facility</rdfs:label>
-        <rdfs:label xml:lang="it">ospita strumenti di monitoraggio</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/italia/onto/IoT/implementsMethod -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/IoT/implementsMethod">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/IoT/Method"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor -->
@@ -331,23 +288,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/isHostedByPlatform -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/IoT/isHostedByPlatform">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/IoT/Platform"/>
-        <rdfs:comment xml:lang="en">inverse property of &quot;hosts monitoring facility&quot; that connects moniotirng facilities with the platform that hosts them.</rdfs:comment>
-        <rdfs:comment xml:lang="it">proprietà inversa di &quot;ospita strumenti di monitoraggio&quot; che collega gli strumenti di monitoraggio con la piattaforma che li ospitano</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">is hosted by platform</rdfs:label>
-        <rdfs:label xml:lang="it">è ospitato da piattaforma</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:ObjectProperty>
-    
 
 
     <!-- https://w3id.org/italia/onto/IoT/isMeasurementQualityValueOf -->
@@ -363,7 +304,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/isObservationParameterFor -->
@@ -379,7 +320,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/isObservationValueOf -->
@@ -395,7 +336,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/isPartOf -->
@@ -411,7 +352,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/isValueForObservationParameter -->
@@ -427,7 +368,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/makesObservation -->
@@ -446,7 +387,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/makesObservationCollection -->
@@ -464,7 +405,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/observationCollectionMadeBySensor -->
@@ -480,7 +421,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/observationMadeBySensor -->
@@ -496,7 +437,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/phenomenonTime -->
@@ -514,32 +455,16 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/usedMethod -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/IoT/usedMethod">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/Observation"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/IoT/Method"/>
-        <rdfs:comment xml:lang="en">Property that links the observation with the method used to derive it.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;osservazione con il metodo utilizzato per rilevarla.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="it">metodo usato</rdfs:label>
-        <rdfs:label xml:lang="en">used method</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisorio - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:ObjectProperty>
-    
 
 
     <!-- https://w3id.org/italia/onto/TI/atTime -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -547,7 +472,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/issued -->
@@ -555,7 +480,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/issued">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/TI/"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/modified -->
@@ -563,7 +488,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/modified">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/TI/"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/description -->
@@ -571,7 +496,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/description">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/l0/"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/identifier -->
@@ -579,7 +504,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/l0/"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
@@ -587,10 +512,10 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/name">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/l0/"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -598,7 +523,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/CLV/Geometry -->
@@ -606,7 +531,7 @@
     <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Geometry">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/CLV/"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Accuracy -->
@@ -621,25 +546,25 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Actuator -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Actuator">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
         <rdfs:comment xml:lang="en">An actuator.</rdfs:comment>
         <rdfs:comment xml:lang="it">La classe che rappresenta un attuatore.</rdfs:comment>
         <rdfs:label xml:lang="en">Actuator</rdfs:label>
         <rdfs:label xml:lang="it">Attuatore</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/FeatureOfInterest -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/FeatureOfInterest">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor"/>
@@ -660,7 +585,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Frequency -->
@@ -675,7 +600,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Latency -->
@@ -690,7 +615,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/MeasurementQuality -->
@@ -712,7 +637,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/MeasurementQualityValue -->
@@ -729,51 +654,7 @@
         <rdfs:label xml:lang="en">Measurement Quality Value</rdfs:label>
         <rdfs:label xml:lang="it">Valore Qualità di Misurazione</rdfs:label>
     </owl:Class>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/Method -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Method">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
-        <rdfs:comment xml:lang="en">A workflow, protocol, plan, algorithm, or computational method specifying how to make an observation. It is implemented by monitoring facilities</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un metodo di misurazione, una procedura, un protocollo che specifica come effetturare un&apos;osservazione e che è implementato da uno strumento di monitoraggio.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">Method</rdfs:label>
-        <rdfs:label xml:lang="it">Metodo</rdfs:label>
-        <rdfs:label xml:lang="it">Procedura</rdfs:label>
-        <rdfs:label xml:lang="it">Protocollo</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/italia/onto/IoT/MonitoringFacility -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/MonitoringFacility">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/implementsMethod"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/Method"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/isHostedByPlatform"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/Platform"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Il termine è utilizzato nelle relative specifiche INSPIRE per definire degli strumenti di monitoraggio. Nel contesto di questa ontologia sono i sensori e gli attuatori.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The term refers to the related INSPIRE specifications for environmental monitoring facilties. In the context of this ontology, it consists of sensors and actuators</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="en">Monitoring Facility</rdfs:label>
-        <rdfs:label xml:lang="it">Strumento di monitoraggio</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisorio - in attesa di validazione</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
-    
 
 
     <!-- https://w3id.org/italia/onto/IoT/Observation -->
@@ -796,12 +677,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/hasQuality"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/MeasurementQuality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/usedMethod"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/Method"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -887,7 +762,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/ObservationCollection -->
@@ -921,20 +796,13 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/ObservationParameter -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/ObservationParameter">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
-                    <rdf:Description rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/hasValueForObservationParameter"/>
@@ -961,7 +829,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/ObservationValue -->
@@ -977,7 +845,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/isValueForObservationParameter"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/ObservationParameter"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/ObservationValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">It represents the value of the observation. For instance if we say that the temperature of the kitchen is 28 celsius degrees, the observed value is 28 celsius degrees.</rdfs:comment>
@@ -988,7 +856,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Offset -->
@@ -1003,28 +871,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
 
-
-    <!-- https://w3id.org/italia/onto/IoT/Platform -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Platform">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/hostsMonitoringFacility"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">E&apos; un oggetto che ospita strumenti di monitoraggio.  Può essere una boa, un cellulare, un sistema satellitare, una stazione meteo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">It is an object that hosts monitoring facilities. It can be a buoy, a mobile phone, a meteo station, a satellite</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/IoT"/>
-        <rdfs:label xml:lang="it">Piattaforma</rdfs:label>
-        <rdfs:label xml:lang="en">Platform</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisorio - da validare</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
-    
 
 
     <!-- https://w3id.org/italia/onto/IoT/Precision -->
@@ -1039,7 +886,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Repetability -->
@@ -1054,7 +901,7 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/RoadSegment -->
@@ -1069,13 +916,13 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Sensor -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Sensor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/MonitoringFacility"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/IoT/makesObservation"/>
@@ -1102,7 +949,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/TrafficFlow -->
@@ -1117,46 +964,48 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/MU/Value -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
-    
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/TI/"/>
+    </owl:Class>
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Activity"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Characteristic -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Collection -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Collection"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Object -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Object"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1164,7 +1013,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://spcdata.digitpa.gov.it/Amministrazione/agid -->
@@ -1176,19 +1025,7 @@
         <foaf:name xml:lang="it">Agenzia per l&apos;Italia Digitale</foaf:name>
         <foaf:name xml:lang="en">Italian Digital Agency</foaf:name>
     </owl:NamedIndividual>
-    
 
-
-    <!-- https://w3id.org/italia/data/contact-point/onto-agid -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/contact-point/onto-agid">
-        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
-        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
-        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <vcard:fn>banche dati e open data</vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- https://w3id.org/italia/data/distribution/IOT-JSON-LD -->
@@ -1204,7 +1041,7 @@
         <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/IoT-AP_IT.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/distribution/IOT-RDF-TURTLE -->
@@ -1220,7 +1057,7 @@
         <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/latest/IoT-AP_IT.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/distribution/IOT-RDF-XML -->
@@ -1236,7 +1073,19 @@
         <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/IoT/latest/IoT-AP_IT.rdf"/>
     </owl:NamedIndividual>
-    
+
+
+
+    <!-- https://w3id.org/italia/data/contact-point/onto-agid -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/contact-point/onto-agid">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <vcard:fn>banche dati e open data</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:info@dati.gov.it"/>
+    </owl:NamedIndividual>
+
 
 
     <!-- https://w3id.org/italia/data/organization/public-organization/td -->
@@ -1248,7 +1097,7 @@
         <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
         <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab -->
@@ -1259,7 +1108,7 @@
         <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
         <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/project/DAF -->
@@ -1268,7 +1117,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
         <foaf:name xml:lang="it">Data &amp; Analytics Framework</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/data/project/OntoPiA -->
@@ -1277,7 +1126,7 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
         <l0:name xml:lang="it">OntoPiA - la rete di ontologie della pubblica amministrazione italiana</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT -->
@@ -1289,5 +1138,4 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
